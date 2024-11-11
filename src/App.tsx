@@ -1,3 +1,5 @@
+import { Button } from "@/components";
+
 export const App = () => {
-  return <div>Hello World</div>;
+  return <Button>asd</Button>;
 };
