@@ -1,12 +1,21 @@
-import { HTMLAttributes, ReactNode } from "react";
-
-type ButtonProps = {
-  children: ReactNode;
-};
+import { cn } from "@/utils";
+import { TButton } from "./Button.types";
+import { buttonStyles } from "./Button.styles";
 
 export const Button = ({
   children,
+  variant,
+  size,
+  colorscheme,
+  className,
   ...rest
-}: ButtonProps & HTMLAttributes<HTMLButtonElement>) => {
-  return <button {...rest}>{children}</button>;
+}: TButton) => {
+  return (
+    <button
+      className={cn(buttonStyles({ variant, size, colorscheme }), className)}
+      {...rest}
+    >
+      {children}
+    </button>
+  );
 };
