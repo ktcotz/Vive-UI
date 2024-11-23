@@ -66,25 +66,14 @@ const config: Config = {
 
   themeConfig: {
     navbar: {
-      title: "Vive UI Docs",
       items: [
         { to: "/", label: "Home", position: "left" },
         { to: "docs/intro", label: "Docs", position: "left" },
-      ],
-    },
-    footer: {
-      style: "dark",
-      links: [
         {
-          title: "Docs",
-          items: [{ label: "Introduction", to: "docs/intro" }],
-        },
-        {
-          title: "Community",
-          items: [
-            { label: "GitHub", href: "https://github.com/ktcotz/Vive-UI" },
-            { label: "NPM", href: "https://www.npmjs.com/package/vive-ui" },
-          ],
+          href: "https://github.com/ktcotz/Vive-UI",
+          position: "right",
+          className: "header-github-icon",
+          "aria-label": "Vive UI repositorium",
         },
       ],
     },
