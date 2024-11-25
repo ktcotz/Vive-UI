@@ -112,7 +112,7 @@ body {
 */
 
 .header-github-icon {
-  display: inline-block;
+  display: flex;
   width: 24px;
   height: 24px;
   margin-right: 12px;
@@ -126,7 +126,7 @@ body {
   background: var(--icon-github-dark);
 }
 
-.menu__list-item .header-github-icon {
+.menu__link .header-github-icon {
   display: none;
 }
 
@@ -143,8 +143,18 @@ body {
   z-index: -1;
 }
 
-@media (max-width: 676px) {
+@media (max-width: 768px) {
   .pattern {
     background-size: 250%;
+  }
+
+  .navbar__items--right {
+    margin-right: 40px;
+  }
+}
+
+@media (max-width: 478px) {
+  .pattern {
+    background-size: 450%;
   }
 }
