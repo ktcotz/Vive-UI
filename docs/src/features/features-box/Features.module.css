@@ -1,0 +1,33 @@
+.features {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3rem;
+  align-items: start;
+}
+
+.feature {
+  display: grid;
+  grid-template-rows: 4rem 4rem max-content;
+  gap: 1rem;
+}
+
+.feature__icon-box {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--ifm-navbar-background-color);
+}
+
+.feature__icon {
+  color: var(--ifm-color-primary-dark);
+}
+
+@media (max-width: 478px) {
+  .features {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+}
