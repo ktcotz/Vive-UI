@@ -1,0 +1,8 @@
+.container {
+  padding: 1rem;
+  border: 1px solid var(--prism-background-color);
+  border-radius: 8px;
+  background-color: var(--prism-background-color);
+  width: 100%;
+  overflow-x: auto;
+}
