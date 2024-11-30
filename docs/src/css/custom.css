@@ -126,8 +126,8 @@ body {
   background: var(--icon-github-dark);
 }
 
-.menu__link .header-github-icon {
-  display: none;
+.menu__link.header-github-icon {
+  margin-left: 0.75rem;
 }
 
 .pattern {
@@ -144,7 +144,7 @@ body {
 }
 
 .features-box {
-  margin-top: 10rem;
+  margin-top: 6rem;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 2rem;
