@@ -3,24 +3,37 @@ export default {
 };
 
 export const ToViveUI = () => (
-  <div style={{ padding: 20, fontFamily: "Arial, sans-serif" }}>
-    <h1>Witamy w Vive-UI</h1>
-    <p>Twoja biblioteka komponentów UI w React.</p>
-    <h2>Jak korzystać?</h2>
-    <ul>
-      <li>Przeglądaj komponenty w zakładkach po lewej stronie.</li>
-      <li>Zmieniaj propsy i testuj działanie na żywo.</li>
-      <li>Sprawdź przykłady użycia każdego komponentu.</li>
-    </ul>
-    <h2>Plany rozwoju</h2>
-    <p>Dodamy więcej komponentów i dokumentacji wkrótce.</p>
-    <h2>Repozytorium</h2>
-    <a
-      href="https://github.com/ktcotz/Vive-UI"
-      target="_blank"
-      rel="noreferrer"
-    >
-      github.com/ktcotz/Vive-UI
-    </a>
+  <div className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-gray-50 to-gray-100 p-8">
+    <div className="bg-white rounded-2xl shadow-2xl p-10 max-w-2xl text-center">
+      <h1 className="text-4xl font-bold text-gray-800">Vive‑UI</h1>
+      <p className="text-gray-600 mt-3">
+        Modernistyczna biblioteka komponentów React
+      </p>
+      <div className="mt-6 space-y-4 text-left">
+        <h2 className="text-2xl font-semibold text-gray-800">🚀 Jak zacząć?</h2>
+        <ul className="list-disc list-inside text-gray-700 space-y-1">
+          <li>👉 Przejdź do wybranego komponentu w sidebarze</li>
+          <li>🎨 Testuj różne propsy i ustawienia bez pisania kodu</li>
+          <li>💻 Skorzystaj z przykładowych implementacji</li>
+        </ul>
+        <h2 className="text-2xl font-semibold text-gray-800 mt-6">
+          🌱 Plany rozwoju
+        </h2>
+        <p className="text-gray-600">
+          Kolejne wersje wprowadzą więcej komponentów, przykładowe layouty i
+          pełne typowanie.
+        </p>
+      </div>
+      <div className="mt-8">
+        <a
+          href="https://github.com/ktcotz/Vive-UI"
+          target="_blank"
+          rel="noreferrer"
+          className="inline-block rounded-lg bg-blue-600 text-white font-semibold py-3 px-6 hover:bg-blue-700 transition"
+        >
+          🔗 Przejdź do Repozytorium
+        </a>
+      </div>
+    </div>
   </div>
 );
