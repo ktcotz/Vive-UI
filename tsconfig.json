@@ -10,7 +10,7 @@
     "strict": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
-    "moduleResolution": "Node",
+    "moduleResolution": "bundler",
     "allowImportingTsExtensions": false,
     "jsx": "react-jsx",
     "baseUrl": ".",

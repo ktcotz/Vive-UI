@@ -34,6 +34,19 @@ export default function App() {
 }
 ```
 
+## ⚠️ Wymagania dotyczące styli
+
+Vive-UI opiera się na **TailwindCSS** do stylizacji komponentów.  
+Oznacza to, że w projekcie, w którym korzystasz z Vive-UI, powinieneś mieć skonfigurowany TailwindCSS, aby style działały poprawnie.
+
+Jeśli nie masz Tailwinda w swoim projekcie, komponenty będą renderować się bez stylów.  
+Możesz dodać TailwindCSS do swojego projektu, korzystając z oficjalnej dokumentacji:  
+[https://tailwindcss.com/docs/installation](https://tailwindcss.com/docs/installation)
+
+---
+
+W przyszłości planujemy dodać także gotowy plik CSS do importu, aby uprościć użycie Vive-UI w projektach bez Tailwinda.
+
 ## 📖 Dokumentacja i demo
 
 Pełną dokumentację i live demo znajdziesz w Storybooku:
@@ -41,6 +54,7 @@ Pełną dokumentację i live demo znajdziesz w Storybooku:
 [https://vive-ui.vercel.app](https://vive-ui.vercel.app)
 
 Aby uruchomić Storybook lokalnie:
+
 ```bash
 npm run storybook
 ```

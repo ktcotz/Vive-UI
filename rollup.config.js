@@ -23,7 +23,7 @@ export default [
       },
     ],
     plugins: [
-      peerDepsExternal(),
+      peerDepsExternal({ includeDependencies: false }),
       resolve(),
       commonjs(),
       postcss({
@@ -35,7 +35,11 @@ export default [
       alias({
         entries: [{ find: "@", replacement: "./src" }],
       }),
-      typescript({ tsconfig: "./tsconfig.json" }),
+      typescript({
+        tsconfig: "./tsconfig.json",
+        declaration: true,
+        declarationDir: "dist/types",
+      }),
     ],
     external: ["react", "react-dom"],
   },
@@ -43,6 +47,6 @@ export default [
     input: "dist/types/index.d.ts",
     output: [{ file: "dist/index.d.ts", format: "esm" }],
     plugins: [dts()],
-    external: [/\.css$/, "react", "react-dom"],
+    external: [/\.css$/, "react", "react-dom", "class-variance-authority"],
   },
 ];

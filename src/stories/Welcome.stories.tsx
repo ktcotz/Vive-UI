@@ -3,7 +3,7 @@ export default {
 };
 
 export const ToViveUI = () => (
-  <div className="min-h-screen flex flex-col justify-center items-center bg-gradient-to-br from-gray-50 to-gray-100 p-8">
+  <div className="min-h-screen flex flex-col justify-center items-center bg-linear-to-br from-gray-50 to-gray-100 p-8">
     <div className="bg-white rounded-2xl shadow-2xl p-10 max-w-2xl text-center">
       <h1 className="text-4xl font-bold text-gray-800">Vive‑UI</h1>
       <p className="text-gray-600 mt-3">

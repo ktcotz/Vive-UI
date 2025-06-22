@@ -18,7 +18,7 @@ export const buttonStyles = cva(
       size: {
         sm: "px-4 py-2 text-sm",
         md: "px-6 py-3 text-base",
-        lg: "px-8 py-4 text-lg", 
+        lg: "px-8 py-4 text-lg",
       },
       colorscheme: {
         primary: "bg-blue-500 text-white",
