@@ -1,6 +1,6 @@
 {
   "name": "viveui",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "description": "Vive UI - custom components library created by ktcotz for internal use",
   "type": "module",
   "main": "dist/index.cjs.js",
@@ -25,6 +25,7 @@
     "react-dom": "^18.3.1"
   },
   "dependencies": {
+    "@tailwindcss/vite": "^4.1.10",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
     "tailwind-merge": "^2.5.4"
@@ -43,6 +44,7 @@
     "@storybook/react": "^8.4.2",
     "@storybook/react-vite": "^8.4.2",
     "@storybook/test": "^8.4.2",
+    "@tailwindcss/postcss": "^4.1.10",
     "@types/react": "^18.3.12",
     "@types/react-dom": "^18.3.1",
     "@vitejs/plugin-react": "^4.3.3",
