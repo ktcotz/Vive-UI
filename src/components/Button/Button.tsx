@@ -1,4 +1,4 @@
-import { cn } from "@/utils";
+import { cn } from "./../../utils";
 import { TButton } from "./Button.types";
 import { buttonStyles } from "./Button.styles";
 
