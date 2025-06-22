@@ -1,50 +1,52 @@
-# React + TypeScript + Vite
+# Vive-UI
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[![npm version](https://img.shields.io/npm/v/viveui.svg)](https://www.npmjs.com/package/viveui)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/ktcotz/Vive-UI/ci.yml?branch=main)](https://github.com/ktcotz/Vive-UI/actions)
+[![License](https://img.shields.io/npm/l/viveui.svg)](LICENSE)
 
-Currently, two official plugins are available:
+**Vive-UI** to nowoczesna, lekkka biblioteka komponentów UI dla React, napisana w TypeScript i stylizowana za pomocą TailwindCSS.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Instalacja
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+Zainstaluj Vive-UI w swoim projekcie:
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```bash
+npm install viveui
+# lub
+yarn add viveui
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+## ✨ Szybki start
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+```bash
+import { Button } from 'viveui';
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+export default function App() {
+  return (
+    <div className="p-4">
+      <Button variant="primary" size="md">
+        Kliknij mnie
+      </Button>
+    </div>
+  );
+}
 ```
+
+## 📖 Dokumentacja i demo
+
+Pełną dokumentację i live demo znajdziesz w Storybooku:
+
+[https://vive-ui.vercel.app](https://vive-ui.vercel.app)
+
+Aby uruchomić Storybook lokalnie:
+```bash
+npm run storybook
+```
+
+## 🤝 Współpraca
+
+Masz pomysł na nowy komponent lub poprawkę? Chętnie przyjmujemy pull requesty i sugestie!
+
+**Dziękujemy, że korzystasz z Vive-UI! 🎉**
