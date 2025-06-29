@@ -11,9 +11,10 @@
   ],
   "scripts": {
     "dev": "vite",
+    "build:css": "npx tailwindcss -i src/style.css -o dist/style.css --minify",
     "build:types": "tsc --build",
     "build:rollup": "rollup -c",
-    "build": "npm run build:rollup && npm run build:types",
+    "build": "npm run build:rollup && npm run build:types && npm run build:css",
     "lint": "eslint .",
     "preview": "vite preview",
     "storybook": "storybook dev -p 6006",
