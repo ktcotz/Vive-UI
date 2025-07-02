@@ -1,6 +1,9 @@
+import { type VariantProps } from "class-variance-authority";
+import { HTMLAttributes, ReactNode } from "react";
 import { cva } from "class-variance-authority";
+import { cn } from "@/utils";
 
-export const buttonStyles = cva(
+const buttonStyles = cva(
   [
     "w-full",
     "rounded-md",
@@ -39,3 +42,26 @@ export const buttonStyles = cva(
     },
   }
 );
+
+export type TButton = {
+  children: ReactNode;
+} & HTMLAttributes<HTMLButtonElement> &
+  VariantProps<typeof buttonStyles>;
+
+export const Button = ({
+  children,
+  variant,
+  size,
+  colorscheme,
+  className,
+  ...rest
+}: TButton) => {
+  return (
+    <button
+      className={cn(buttonStyles({ variant, size, colorscheme }), className)}
+      {...rest}
+    >
+      {children}
+    </button>
+  );
+};
