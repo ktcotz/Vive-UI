@@ -1,5 +1,5 @@
-import type { Preview } from "@storybook/react";
-import "../src/style/style.css";
+import type { Preview } from '@storybook/react-vite';
+import './../src/dist/styles.css';
 
 const preview: Preview = {
   parameters: {
@@ -11,7 +11,7 @@ const preview: Preview = {
     },
     options: {
       storySort: {
-        order: ["Welcome"],
+        order: ['Welcome'],
       },
     },
   },
