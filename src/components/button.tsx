@@ -18,7 +18,7 @@ const buttonStyles = cva(
         lg: 'px-8 py-4 text-lg',
       },
       colorscheme: {
-        primary: 'bg-blue-500 text-white',
+        primary: 'text-cosiek-300',
         secondary: 'bg-gray-500 text-white',
       },
     },
@@ -26,7 +26,6 @@ const buttonStyles = cva(
       {
         variant: 'solid',
         colorscheme: 'primary',
-        className: 'hover:bg-blue-600',
       },
     ],
     defaultVariants: {

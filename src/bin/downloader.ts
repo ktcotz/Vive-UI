@@ -1,26 +1,26 @@
-import fs from "fs";
-import path from "path";
-import fetch from "node-fetch";
+import fs from 'fs';
+import path from 'path';
+import fetch from 'node-fetch';
 
-import { repoBaseUrl, UTILS_FILES } from "./helpers.js";
+import { repoBaseUrl, UTILS_FILES } from './helpers.js';
 
 export async function downloadComponent(name: string): Promise<void> {
   try {
     const url = `${repoBaseUrl}/${name}.tsx`;
-
     const res = await fetch(url);
 
     if (!res.ok) throw new Error(`Component ${name} not found at ${url}`);
 
     const text = await res.text();
 
-    const destDir = path.resolve(process.cwd(), "src", "components");
+    const destDir = path.resolve(process.cwd(), 'src', 'components');
     fs.mkdirSync(destDir, { recursive: true });
 
     const destFile = path.join(destDir, `${name}.tsx`);
+
     fs.writeFileSync(destFile, text);
 
-    console.log(`Component ${name} copied to ${destFile}`);
+    console.log(`Component ${name} został skopiowany do ${destFile} (nadpisany jeśli istniał)`);
   } catch (error) {
     console.error((error as Error).message);
     process.exit(1);
@@ -28,7 +28,7 @@ export async function downloadComponent(name: string): Promise<void> {
 }
 
 export async function downloadUtils() {
-  const utilsDir = path.resolve(process.cwd(), "src", "utils");
+  const utilsDir = path.resolve(process.cwd(), 'src', 'utils');
   fs.mkdirSync(utilsDir, { recursive: true });
 
   for (const file of UTILS_FILES) {
