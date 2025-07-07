@@ -1,51 +1,32 @@
 # Vive-UI
 
 [![npm version](https://img.shields.io/npm/v/viveui.svg)](https://www.npmjs.com/package/viveui)
-[![Build Status](https://img.shields.io/github/actions/workflow/status/ktcotz/Vive-UI/ci.yml?branch=main)](https://github.com/ktcotz/Vive-UI/actions)
 [![License](https://img.shields.io/npm/l/viveui.svg)](LICENSE)
 
-**Vive-UI** to nowoczesna, lekkka biblioteka komponentów UI dla React, napisana w TypeScript i stylizowana za pomocą TailwindCSS.
+**Vive-UI** to nowoczesna, lekkka biblioteka komponentów UI dla React, napisana w TypeScript i stylizowana za pomocą TailwindCSS. Zbudowana jest w oparciu o pomysł/użycie ShadcnUI.
 
 ---
 
 ## 🚀 Instalacja
 
-Zainstaluj Vive-UI w swoim projekcie:
+Skorzystaj z wbudowanego CLI ViveUI!
 
 ```bash
-npm install viveui
-# lub
-yarn add viveui
+npx vive-ui
 ```
 
 ## ✨ Szybki start
 
 ```bash
-import { Button } from 'viveui';
-
-export default function App() {
-  return (
-    <div className="p-4">
-      <Button variant="primary" size="md">
-        Kliknij mnie
-      </Button>
-    </div>
-  );
-}
+- Wybierz jedną z dostępnych opcji i podążaj za wskazówkami!
 ```
 
 ## ⚠️ Wymagania dotyczące styli
 
-Vive-UI opiera się na **TailwindCSS** do stylizacji komponentów.  
-Oznacza to, że w projekcie, w którym korzystasz z Vive-UI, powinieneś mieć skonfigurowany TailwindCSS, aby style działały poprawnie.
-
-Jeśli nie masz Tailwinda w swoim projekcie, komponenty będą renderować się bez stylów.  
-Możesz dodać TailwindCSS do swojego projektu, korzystając z oficjalnej dokumentacji:  
-[https://tailwindcss.com/docs/installation](https://tailwindcss.com/docs/installation)
+Vive-UI opiera się na **TailwindCSS** i korzysta z customowych zmiennych dotyczących różnych styli które można dowolnie customizować według własnych potrzeb.
+Najważniejsze informacje dotyczące instalacji oraz zmiennych : [https://vive-ui.vercel.app/?path=/story/intro--installation-guide](https://vive-ui.vercel.app/?path=/story/intro--installation-guide)
 
 ---
-
-W przyszłości planujemy dodać także gotowy plik CSS do importu, aby uprościć użycie Vive-UI w projektach bez Tailwinda.
 
 ## 📖 Dokumentacja i demo
 

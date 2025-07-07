@@ -1,5 +1,11 @@
 @import 'tailwindcss';
 
 @theme {
-  --color-cosiek-300: red;
+  --color-primary: hsl(0, 0%, 9%);
+  --color-primary-foreground: hsl(0, 0%, 98%);
+  --color-secondary: hsl(0, 0%, 96%);
+  --color-background: hsl(0, 0%, 100%);
+  --color-destructive: hsl(357, 100%, 45%);
+  --color-ring: hsl(0, 0%, 63%);
+  --color-border: hsl(0, 0%, 90%);
 }

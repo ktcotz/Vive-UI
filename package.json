@@ -25,14 +25,15 @@
     "react-dom": "^18.3.1"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.2.3",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
-    "inquirer": "^12.7.0",
-    "node-fetch": "^3.3.2",
     "tailwind-merge": "^2.5.4",
     "vite-tsconfig-paths": "^5.1.2"
   },
   "devDependencies": {
+    "inquirer": "^12.7.0",
+    "node-fetch": "^3.3.2",
     "@chromatic-com/storybook": "^4.0.1",
     "@eslint/js": "^9.13.0",
     "@mdx-js/react": "^3.1.0",
