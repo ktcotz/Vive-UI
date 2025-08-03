@@ -1,7 +1,7 @@
 import { type VariantProps } from 'class-variance-authority';
 import { type ButtonHTMLAttributes, type ReactNode } from 'react';
 import { cva } from 'class-variance-authority';
-import { cn } from '@/utils';
+import { cn } from './../lib';
 import { Slot } from '@radix-ui/react-slot';
 
 const buttonStyles = cva(
@@ -35,6 +35,7 @@ const buttonStyles = cva(
 export type TButton = {
   children: ReactNode;
   asChild?: boolean;
+  className?: string;
 } & ButtonHTMLAttributes<HTMLButtonElement> &
   VariantProps<typeof buttonStyles>;
 
@@ -42,7 +43,7 @@ export const Button = ({
   children,
   variant = 'default',
   size = 'default',
-  className,
+  className = '',
   asChild = false,
   ...rest
 }: TButton) => {
