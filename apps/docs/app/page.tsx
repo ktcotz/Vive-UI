@@ -1,4 +1,4 @@
-import { Button } from "@vive/ui";
+import { Button } from "vive-ui";
 
 export default function Home() {
   return (
