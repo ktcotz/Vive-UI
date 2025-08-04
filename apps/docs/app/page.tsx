@@ -1,3 +1,5 @@
+"use client";
+
 import { Button } from "vive-ui";
 
 export default function Home() {

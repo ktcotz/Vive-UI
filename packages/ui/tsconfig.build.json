@@ -8,7 +8,9 @@
     "isolatedModules": false,
     "module": "ESNext",
     "target": "ESNext",
-    "skipLibCheck": true
+    "skipLibCheck": true,
+    "esModuleInterop": true,
+    "types": []
   },
   "include": ["src"]
 }
