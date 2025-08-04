@@ -1,11 +1,11 @@
 {
   "name": "vive-ui",
-  "version": "1.0.3",
+  "version": "1.0.7",
   "description": "Vive UI - custom components library created by ktcotz for internal use",
   "type": "module",
   "license": "MIT",
   "bin": {
-    "vive-ui": "./dist/bin/cli.js"
+    "vive-ui": "./dist/cli.js"
   },
   "files": [
     "dist"
@@ -50,6 +50,7 @@
     "@radix-ui/react-slot": "^1.2.3",
     "@rollup/plugin-alias": "^5.1.1",
     "@rollup/plugin-commonjs": "^28.0.6",
+    "@rollup/plugin-json": "^6.1.0",
     "@rollup/plugin-node-resolve": "^16.0.1",
     "@rollup/plugin-typescript": "^12.1.4",
     "@storybook/addon-docs": "^9.0.15",
@@ -79,6 +80,7 @@
     "rimraf": "^6.0.1",
     "rollup": "^4.46.2",
     "rollup-plugin-postcss": "^4.0.2",
+    "rollup-plugin-terser": "^7.0.2",
     "rollup-plugin-typescript2": "^0.36.0",
     "storybook": "^9.0.15",
     "tailwindcss": "^4.1.11",

@@ -17,5 +17,6 @@
     "declarationDir": "dist/types",
     "types": []
   },
-  "include": ["src", "rollup.config.ts"]
+  "include": ["src"],
+  "exclude": ["rollup.config.ts"]
 }
