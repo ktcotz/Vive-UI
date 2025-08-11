@@ -22,6 +22,6 @@ describe('Button', () => {
 
   it('is disabled when disabled prop is set', () => {
     render(<Button disabled>Disabled</Button>);
-    expect(screen.getByText('Disabled')).toHaveAttribute('disabled');
+    expect(screen.getByText('Disabled')).toBeDisabled();
   });
 });
