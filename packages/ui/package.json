@@ -1,6 +1,6 @@
 {
   "name": "vive-ui",
-  "version": "1.0.7",
+  "version": "1.0.9",
   "description": "Vive UI - custom components library created by ktcotz for internal use",
   "type": "module",
   "license": "MIT",
@@ -16,13 +16,11 @@
     "access": "public"
   },
   "scripts": {
-    "dev": "vite",
     "storybook": "npm run tailwind:watch | npm run storybook:dev",
     "storybook:dev": "storybook dev -p 6006",
     "build-storybook": "npm run tailwind:build && storybook build",
     "tailwind:build": "npx tailwindcss -i ./src/style/style.css -o ./dist/styles.css --minify",
     "tailwind:watch": "npm run tailwind:build -- --watch",
-    "preview": "vite preview",
     "lint": "eslint .",
     "build": "rollup -c --bundleConfigAsCjs",
     "build:types": "tsc --project tsconfig.build.json",

@@ -1,47 +1,50 @@
-# Vive-UI
+# Vive UI
 
-[![npm version](https://img.shields.io/npm/v/viveui.svg)](https://www.npmjs.com/package/viveui)
-[![License](https://img.shields.io/npm/l/viveui.svg)](LICENSE)
-
-**Vive-UI** to nowoczesna, lekkka biblioteka komponentów UI dla React, napisana w TypeScript i stylizowana za pomocą TailwindCSS. Zbudowana jest w oparciu o pomysł/użycie ShadcnUI.
+**Vive UI** is a React component library styled with Tailwind CSS.  
+It provides ready-to-use, theme-consistent components for your projects.
 
 ---
 
-## 🚀 Instalacja
-
-Skorzystaj z wbudowanego CLI ViveUI!
+## Installation
 
 ```bash
+npm install vive-ui
+# or
+yarn add vive-ui
+# or
+pnpm add vive-ui
+# or
 npx vive-ui
 ```
 
-## ✨ Szybki start
+## Usage
+
+### With npm install
+
+- **Import styles** in your main entry file (e.g. src/main.tsx or src/index.tsx):
 
 ```bash
-- Wybierz jedną z dostępnych opcji i podążaj za wskazówkami!
+    import 'vive-ui/dist/styles.css';
 ```
 
-## ⚠️ Wymagania dotyczące styli
-
-Vive-UI opiera się na **TailwindCSS** i korzysta z customowych zmiennych dotyczących różnych styli które można dowolnie customizować według własnych potrzeb.
-Najważniejsze informacje dotyczące instalacji oraz zmiennych : [https://vive-ui.vercel.app/?path=/story/intro--installation-guide](https://vive-ui.vercel.app/?path=/story/intro--installation-guide)
-
----
-
-## 📖 Dokumentacja i demo
-
-Pełną dokumentację i live demo znajdziesz w Storybooku:
-
-[https://vive-ui.vercel.app](https://vive-ui.vercel.app)
-
-Aby uruchomić Storybook lokalnie:
+- **Use components** in your React code:
 
 ```bash
-npm run storybook
+import { Button } from 'vive-ui';
+
+export default function App() {
+  return <Button>Click Me</Button>;
+}
 ```
 
-## 🤝 Współpraca
+### With npx
 
-Masz pomysł na nowy komponent lub poprawkę? Chętnie przyjmujemy pull requesty i sugestie!
+- **Choose from CLI** specified command to manage components, adding them would be created in components folder.
 
-**Dziękujemy, że korzystasz z Vive-UI! 🎉**
+- **Import components** specified in components folder. Its like shadcn copy/paste components functionality.
+
+## Documentation
+
+Full component documentation and examples are available in Storybook:
+
+[Storybook Docs](https://vive-ui.vercel.app)
