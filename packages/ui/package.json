@@ -19,6 +19,7 @@
     "storybook": "npm run tailwind:watch | npm run storybook:dev",
     "storybook:dev": "storybook dev -p 6006",
     "build-storybook": "npm run tailwind:build && storybook build",
+    "tailwind:build": "npx tailwindcss -i ./src/style/style.css -o ./dist/styles.css --minify",
     "lint": "eslint .",
     "build": "rollup -c --bundleConfigAsCjs",
     "build:types": "tsc --project tsconfig.build.json",
