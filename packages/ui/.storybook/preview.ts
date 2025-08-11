@@ -12,7 +12,7 @@ const preview: Preview = {
 
     options: {
       storySort: {
-        order: ['Intro', ['HelloFromTeamViveUI', 'InstallationGuide']],
+        order: ['Intro', ['HelloFromTeamViveUI']],
       },
     },
   },
