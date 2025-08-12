@@ -1,9 +1,5 @@
 #!/usr/bin/env node
 
-import { showCommandsHelper } from "./helpers.js";
+import { runCLI } from './commands/index.js';
 
-const startCLI = async () => {
-  await showCommandsHelper();
-};
-
-startCLI();
+runCLI();

@@ -29,16 +29,15 @@
     "clean:dist": "rimraf dist/__tests__ dist/stories dist/setupTests.js"
   },
   "peerDependencies": {
-    "@radix-ui/react-slot": "^1.2.3",
     "react": "19.1.0",
     "react-dom": "19.1.0"
   },
   "dependencies": {
-    "class-variance-authority": "^0.7.0",
+    "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
     "inquirer": "^12.7.0",
     "node-fetch": "^3.3.2",
-    "tailwind-merge": "^2.5.4",
+    "tailwind-merge": "^2.6.0",
     "vite-tsconfig-paths": "^5.1.2"
   },
   "devDependencies": {
