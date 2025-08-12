@@ -21,7 +21,7 @@ export default {
     format: 'esm',
     entryFileNames: '[name].js',
   },
-  external: ['react', 'react-dom', 'clsx', 'inquirer', 'node-fetch', 'fs', 'path'],
+  external: ['react', 'react-dom', 'inquirer', 'node-fetch', 'fs', 'path'],
   plugins: [
     alias({
       entries: [{ find: '@', replacement: path.resolve(__dirname, 'src') }],
