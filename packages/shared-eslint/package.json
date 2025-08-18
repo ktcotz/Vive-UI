@@ -1,0 +1,21 @@
+{
+  "name": "@vive-ui/shared-eslint",
+  "version": "1.0.0",
+  "main": "index.js",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./base": "./index.js",
+    "./ui": "./ui.js",
+    "./docs": "./docs.js"
+  },
+  "peerDependencies": {
+    "eslint": "^8.0.0 || ^9.0.0",
+    "typescript": "^5.0.0",
+    "eslint-plugin-react": "^7.0.0",
+    "@typescript-eslint/eslint-plugin": "^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0",
+    "@typescript-eslint/parser": "^5.0.0 || ^6.0.0 || ^7.0.0 || ^8.0.0",
+    "eslint-plugin-tailwindcss": "^3.0.0",
+    "@next/eslint-plugin-next": "^15.0.0"
+  }
+}
