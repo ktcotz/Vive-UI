@@ -5,9 +5,6 @@ import "./../globals.css";
 import "vive-ui/dist/styles.css";
 import { cn } from "@/lib";
 import { fontMono, fontSans } from "@/lib/fonts";
-import { Header } from "../_components/layout/header";
-import { Sidebar } from "../_components/layout/sidebar";
-import { TableOfContents } from "../_components/layout/table-of-contents";
 
 export default async function LocaleLayout({
   children,
@@ -26,29 +23,17 @@ export default async function LocaleLayout({
       <body
         className={cn("antialiased", fontSans.className, fontMono.variable)}
       >
-        <NextIntlClientProvider>
-          <div className="min-h-screen bg-background transition-colors duration-30">
-            <Header />
-            <div className="flex h-[calc(100vh-3.5rem)]">
-              <Sidebar />
-              <main className="flex-1 overflow-y-auto">
-                <div className="flex">
-                  <div className="flex-1 flex justify-center min-w-0">
-                    <div className="w-full max-w-4xl px-6 py-6 lg:py-8">
-                      {children}
-                    </div>
-                  </div>
-                  <div className="hidden xl:block w-64 shrink-0">
-                    <div className="sticky top-6 h-[calc(100vh-8rem)] overflow-y-auto">
-                      <div className="px-6 py-4">
-                        <TableOfContents />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </main>
-            </div>
-          </div>
+        <NextIntlClientProvider
+          messages={(await import(`../../messages/${locale}.json`)).default}
+        >
+          <div className="fixed inset-0 pattern-dots opacity-30 animate-pulse" />
+          <div className="fixed inset-0 pattern-grid opacity-20" />
+          <div className="fixed top-20 left-10 w-32 h-32 bg-gradient-to-br from-primary/20 to-secondary/20 rounded-full blur-xl animate-float" />
+          <div
+            className="fixed bottom-20 right-10 w-48 h-48 bg-gradient-to-br from-secondary/20 to-primary/20 rounded-full blur-xl animate-float"
+            style={{ animationDelay: "2s" }}
+          />
+          <div className="relative">{children}</div>
         </NextIntlClientProvider>
       </body>
     </html>
