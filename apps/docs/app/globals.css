@@ -173,3 +173,9 @@
 .animate-gradient-x {
   animation: gradient-x 3s ease infinite;
 }
+
+.tilt-card {
+  transform: perspective(600px) rotateX(var(--rotate-x, 0))
+    rotateY(var(--rotate-y, 0));
+  transition: transform 0.3s ease;
+}

@@ -4,6 +4,7 @@ import { Button } from "../_components/button";
 
 export default function NotFound() {
   const t = useTranslations("");
+
   return (
     <div className="flex min-h-screen flex-col items-center justify-center text-center px-6">
       <h1 className="text-6xl font-bold text-gray-900 dark:text-gray-100">

@@ -1,6 +1,7 @@
 import { navigation } from "@/lib/navigation";
 import { Header } from "../_components/layout/header";
 import { GithubButton } from "../_components/github-button";
+import { HomeIntro } from "../_components/layout/home-intro";
 
 export default function Home() {
   return (
@@ -16,6 +17,9 @@ export default function Home() {
           </Header.Actions>
         </Header.Nav>
       </Header>
+      <main>
+        <HomeIntro />
+      </main>
     </div>
   );
 }

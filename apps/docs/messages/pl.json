@@ -3,5 +3,17 @@
     "title": "Nie znaleziono takiej strony.",
     "goHome": "Wróć do strony głównej",
     "goDocs": "Przejdź do dokumentacji"
+  },
+  "home": {
+    "intro": {
+      "badge-start": "Nowy",
+      "badge-title": "Nowoczesna biblioteka komponentów",
+      "heading-start-title": "Zbuduj swój design system z",
+      "heading-end-title": "pięknymi komponentami",
+      "heading-start-description": "Pięknie zaprojektowane, interaktywne komponenty z efektami 3D i animacjami. Kopiuj, wklejaj i dostosowuj, aby zbudować",
+      "heading-end-description": "oszałamiające nowoczesne interfejsy",
+      "heading-primary-button": "Rozpocznij",
+      "heading-secondary-button": "Przeglądaj komponenty"
+    }
   }
 }

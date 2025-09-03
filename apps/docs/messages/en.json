@@ -3,5 +3,17 @@
     "title": "This page could not be found.",
     "goHome": "Go back home",
     "goDocs": "View documentation"
+  },
+  "home": {
+    "intro": {
+      "badge-start": "New",
+      "badge-title": "Our modern component library",
+      "heading-start-title": "Build your design system with",
+      "heading-end-title": "beautiful components",
+      "heading-start-description": "Beautifully designed, interactive components with 3D effects and animations. Copy, paste, and customize to build",
+      "heading-end-description": "stunning modern interfaces",
+      "heading-primary-button": "Get Started",
+      "heading-secondary-button": "Browse Components"
+    }
   }
 }

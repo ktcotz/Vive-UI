@@ -2,7 +2,6 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import "./../globals.css";
-import "vive-ui/dist/styles.css";
 import { cn } from "@/lib";
 import { fontMono, fontSans } from "@/lib/fonts";
 
